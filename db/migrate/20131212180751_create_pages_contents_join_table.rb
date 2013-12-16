@@ -1,0 +1,11 @@
+class CreatePagesContentsJoinTable < ActiveRecord::Migration
+  def up
+    #create_join_table :pages , :contents
+    create_table :pages_contents, id: false do |t|
+      t.integer :page_id
+      t.integer :content_id
+  end
+end
+  def down
+  end
+end

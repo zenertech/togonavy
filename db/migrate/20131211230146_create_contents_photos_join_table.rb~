@@ -1,0 +1,8 @@
+class CreateContentsPhotosJoinTable < ActiveRecord::Migration
+  def up
+  create_join_table :contents , :photos
+  end
+
+  def down
+  end
+end
