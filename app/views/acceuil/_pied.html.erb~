@@ -1,0 +1,48 @@
+<div id="footerPan">
+	<div id="footernextPan">
+	
+         
+            <ul>
+                <li>|<%= link_to 'Acceuil', '/acceuil/index.html' %>|</li>
+            </ul>
+        
+        
+            <ul> 
+              <li>
+                    |<%= link_to 'Presentation', page_path(@pagetab['Presentation']) %>|
+                <ul>
+                        <li><%= link_to 'Creation', page_path(@pagetab['Creation']) %></li>
+                        <li><%= link_to 'Moyens', page_path(@pagetab['Moyens']) %></li>
+                        <li><%= link_to 'Missions', page_path(@pagetab['Missions']) %></li>
+                        <li><%= link_to 'Resultats', page_path(@pagetab['Resultats']) %></li>
+                        <li><%= link_to 'Contacts', page_path(@pagetab['Contacts']) %></li>
+                        <li><%= link_to 'Actualites', page_path(@pagetab['Actualites']) %></li>
+                </ul>
+          
+              </li>
+            </ul>
+         
+          <ul>
+          <li>
+                |<%= link_to 'Espaces Maritimes', page_path(@pagetab['Espace_Maritime']) %>|
+                <ul>
+                        <li><%= link_to 'Ports', page_path(@pagetab['Ports']) %></li>
+                        <li><%= link_to 'Zones', page_path(@pagetab['Zones']) %></li>
+                        <li><%= link_to 'Mesures', page_path(@pagetab['Mesures']) %></li>
+                </ul>
+          </li>
+          </ul>
+          <ul>
+          <li>|<%= link_to 'Piraterie Maritime', page_path(@pagetab['Piraterie_Maritime']) %>|</li>
+          </ul>
+          <ul>
+          <li>|<%= link_to 'Monde Maritime', page_path(@pagetab['Monde_Maritime']) %></li>
+          </ul>
+    
+   
+    <ul class="templateworld">
+  	<li>Design By:</li>
+	<li>Zener Technologie</li>
+    </ul>
+     </div>
+</div>

@@ -1,0 +1,223 @@
+/* CSS Document */
+body{padding:0; margin:0; background:/*url(statique/body.jpg) no-repeat center center fixed*/ #0000FF; /*background-size:cover;*/ font:14px/20px Arial, Helvetica, sans-serif; color:black; font-weight:normal;}
+div, p, h1, h2, h3, ul, img{padding:0px; margin:0px;}
+ul{list-style-type:none;}
+
+/* TOP PANEL */
+#topPan{width:778px; height:120px; position:relative; margin:0 auto; padding:0;background : #F8F8F8 ;}
+#topPan img{width:204px; height:57px; display:block; padding:23px 0 0 6px;}
+/*menu deroulant*/
+
+/* Principal */
+#menu{  width:778px; 
+        height:24px; 
+        display:block; 
+        position:absolute; 
+        bottom:0px; 
+        right:0px; 
+        margin:0; 
+        padding:0; 
+        list-style: none;
+        background: #111;
+        background: -moz-linear-gradient(#444, #111);
+        background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+        background: -webkit-linear-gradient(#444, #111);
+        background: -o-linear-gradient(#444, #111);
+        background: -ms-linear-gradient(#444, #111);
+        background: linear-gradient(#444, #111);
+        /*-moz-border-radius: 50px;
+        border-radius: 50px;*/
+        -moz-box-shadow: 0 2px 1px #9c9c9c;
+        -webkit-box-shadow: 0 2px 1px #9c9c9c;
+        box-shadow: 0 2px 1px #9c9c9c;
+}
+
+#menu li{
+        float: left;
+        padding: 0 0 10px 0;
+        position: relative;
+}
+
+#menu a{
+        float: left;
+        height: 25px;
+        padding: 0 25px;
+        color: #999;
+        text-transform: uppercase;
+        font: bold 12px/25px Arial, Helvetica;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #000;
+}
+
+#menu li:hover > a{
+        color: #fafafa;
+}
+
+*html #menu li a:hover{ /* IE6 */
+        color: #fafafa;
+}
+
+#menu li:hover > ul{
+        display: block;
+}
+
+/* Sous-menu */
+
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;
+    background: #444;
+    background: -moz-linear-gradient(#444, #111);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+    background: -webkit-linear-gradient(#444, #111);
+    background: -o-linear-gradient(#444, #111);
+    background: -ms-linear-gradient(#444, #111);
+    background: linear-gradient(#444, #111);
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#menu ul li{
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    -moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    -webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+}
+
+#menu ul li:last-child{
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#menu ul a{
+    padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+*html #menu ul a{ /* IE6 */
+        height: 10px;
+        width: 150px;
+}
+
+*:first-child+html #menu ul a{ /* IE7 */
+        height: 10px;
+        width: 150px;
+}
+
+#menu ul a:hover{
+        background: #0186ba;
+        background: -moz-linear-gradient(#04acec,  #0186ba);
+        background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+        background: -webkit-linear-gradient(#04acec,  #0186ba);
+        background: -o-linear-gradient(#04acec,  #0186ba);
+        background: -ms-linear-gradient(#04acec,  #0186ba);
+        background: linear-gradient(#04acec,  #0186ba);
+}
+
+#menu ul li:first-child a{
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+#menu ul li:first-child a:after{
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
+}
+
+#menu ul li:first-child a:hover:after{
+    border-bottom-color: #04acec;
+}
+
+#menu ul li:last-child a{
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Rétablissement du flottement */
+#menu:after{
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+}
+
+* html #menu             { zoom: 1; } /* IE6 */
+*:first-child+html #menu { zoom: 1; } /* IE7 */
+.caption{
+position:absolute;
+bottom:10px;
+width:640px; 
+height:90px;
+opacity:0.5;
+background:#E0E0E0; 
+color:red;
+z-index:2;
+} 
+/* /TOP PANEL */
+
+
+/* BODY PANEL */
+#slidebox {width:778px; height:465px;}
+#bodyPan{width:778px; height:1200px; position:relative;top:20px; margin:0 auto; padding:0; background:#F8F8F8; }
+#posts{width:380px;position:relative;margin:0 auto; padding:0 0 0 10px; float : left;}
+#events{width:380px;position:relative;margin:0 auto; padding:0 0 0 0; float : right;}
+.post{
+position:relative;
+padding:5px 0 0 5px;
+margin: 5px 0 0 0;
+width:360px; 
+height:90px;
+/*opacity:0.5;*/
+background:#D8D8D8; 
+color:black;
+} 
+/* /BODY PANEL */
+
+/* FOOTER PANEL */
+
+#footerPan{width:778px; height:231px; position:relative; top: 30px ;margin:0 auto; padding:0;}
+#footernextPan{width:778px; height:150px; position:absolute; top:5px;  background:#F8F8F8;  margin:0;}
+#footerPan ul{float: left ; width: 150px;height:150px; display:block; position:relative; left:5px; }
+#footerPan li{font:12px/15px "Trebuchet MS",Arial, Helvetica, sans-serif; font-weight:normal;}
+#footerPan ul li a{padding:0 10px; color:#FFFFFA; background:#B0AD93; text-decoration:none;}
+#footerPan ul li a:hover{text-decoration:underline;}
+#footerPan ul li a.padl{padding:0 0 0 14px;}
+
+#footerPan ul.templateworld{width:190px; height: 25px;background:#B0AD93; color:#fff; display:block; position:absolute; top:100px; left:580px;}
+#footerPan ul.templateworld li a{background:#B0AD93; display:block; color:#fff; text-decoration:none;}
+#footerPan ul.templateworld li a:hover{text-decoration:underline;}
+
+#footerPan p{ background:#B0AD93; margin:54px 45px 0 0; display:block; position:absolute; top:0px; right:40px; color:#FCFAE6; font:12px/15px "Trebuchet MS",Arial, Helvetica, sans-serif;}
+#footerPanhtml{width:64px; height:19px; display:block; position:absolute; top:78px; right:170px;}
+#footerPanhtml a{width:59px; height:19px; background:url(statique/arrow5.gif) no-repeat 45px 0px #D0CEB8; display:block; position:absolute; top:0px; left:0px; margin:0; padding:0 0 0 5px; border:1px solid #FFFFFA; color:#353427; text-transform:uppercase; text-decoration:none;}
+#footerPanhtml a:hover{background:url(statique/arrow5.gif) no-repeat 45px 0px #B0AD93; color:#353427; text-decoration:none;}
+
+#footerPancss{width:64px; height:19px; display:block; position:absolute; top:78px; right:89px;}
+#footerPancss a{width:59px; height:19px; background:url(statique/arrow5.gif) no-repeat 45px 0px #D0CEB8; display:block; position:absolute; top:0px; left:0px; margin:0; padding:0 0 0 5px; border:1px solid #FFFFFA; color:#353427; text-transform:uppercase; text-decoration:none;}
+#footerPancss a:hover{background:url(statique/arrow5.gif) no-repeat 45px 0px #B0AD93; color:#353427; text-decoration:none;}

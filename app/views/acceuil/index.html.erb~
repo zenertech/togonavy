@@ -1,0 +1,13 @@
+<div id="topPan">
+<%= render "entete" %>
+<%= render "menu" %>
+</div>
+<%= render "slider" %>
+<%= render "corps" %>
+<%= render "pied" %>
+	
+	
+        
+
+
+

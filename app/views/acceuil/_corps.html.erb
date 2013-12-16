@@ -1,0 +1,17 @@
+<div id="posts">
+<% @users.each do |person| %>
+    <div class ="post">
+        <h1>Name: <%= person.nom %></h1><br/>
+        <% person.posts.each do |post| %>
+             post: <%= post.body %><br/>
+         <% end %>
+     </div>   
+<% end %>
+    
+</div>
+<div id="events">
+<%=  @pagetab %>
+
+</div>
+
+
